@@ -1,0 +1,37 @@
+<input autocomplete="off" type="password">
+
+<div class="field">
+  <input class="field__inp" [ngModel]="textAggregate" type="text" (input)="onInput($event)">
+  <p>{{ textPassword }}</p>
+</div>
+
+<style>
+  p {
+    font-family: 'Dots';
+    font-size: 7px;
+    letter-spacing: -1px;
+    position: absolute;
+    left: 3px;
+    top: 0;
+    z-index: -1;
+  }
+
+  .field {
+    position: relative;
+  }
+
+  .field__inp {
+    font-family: 'Dots';
+    background-color: transparent;
+    color: transparent;
+    caret-color: black;
+    letter-spacing: -7.4px;
+  }
+
+  .field__inp::selection {
+    background-color: #3390ff;
+  }
+
+</style>
+
+
